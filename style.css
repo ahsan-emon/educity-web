@@ -2976,6 +2976,16 @@ p:last-child{
     padding: 16px 32px;
     border: 1px solid #DCDCDC;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.student-profile-nav ul li a i{
+    margin-right: 5px;
+}
+.student-profile-nav ul li a .fa-chevron-down{
+    margin-right: 0px;
+    margin-left: 5px;
+    font-size: 12px;
 }
 .student-profile-nav ul li a.active {
     color: var(--theme__color1);
@@ -3018,11 +3028,17 @@ p:last-child{
     background-color: transparent;
 }
 .student-profile-inner-nav ul li a{
-    font-size: 20px;
+    font-size: 22px;
     color: #8A8A8A;
     padding: 0;
-    font-weight: 400;
-    font-family: var(--font1);
+    font-weight: 500;
+    font-family: var(--font2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.student-profile-inner-nav ul li a i{
+    margin-right: 10px;
 }
 .profile-inner-content{
     background-color: #F5F5F5;
@@ -3058,23 +3074,29 @@ p:last-child{
 .profile-details-content label{
     display: block;
 }
-.gender-field{
+.profile-details-content .first-name, .profile-details-content .last-name{
+    background-color: #F2F7F1;
+}
+.gender-field, .outcome-field{
     display: flex;
     align-items: center;
 }
-.gender-field label{
+.gender-field label, .outcome-field label{
     padding: 12px 20px;
     border: 1px solid #DCDCDC;
     color: var(--color__text);
     cursor: pointer;
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 400;
 }
-.gender-field #male-label{
+.gender-field #male-label, .outcome-field #pass-label, .work-experience-field #yes-label{
     border-radius: 4px 0 0 4px;
 }
-.gender-field #other-label{
+.gender-field #other-label, .outcome-field #ongoing-label, .work-experience-field #no-label{
     border-radius: 0 4px 4px 0;
 }
-.gender-field #female-label{
+.gender-field #female-label, .outcome-field #failed-label{
     border-left: 0;
     border-right: 0;
 }
@@ -3084,13 +3106,10 @@ p:last-child{
     border: 0;
     transition: .3s all ease-in-out;
 }
-.profile-details-content{
-    margin-bottom: 30px;
-}
 .profile-details-content h2{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
-    font-family: var(--font1);
+    font-family: var(--font2);
     color: var(--color__text);
     margin-bottom: 20px;
 }
@@ -3104,14 +3123,18 @@ p:last-child{
 .profile-details-content ul li{
     width: 49%;
 }
-.profile-details-content input{
+.profile-details-content input, .profile-details-content select, .profile-details-content textarea{
     width: 100%;
     border: 1px solid #DCDCDC;
     border-radius: 4px;
     padding: 9px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: var(--color__text);
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 400;
 }
-.profile-details-content input::placeholder{
+.profile-details-content input::placeholder, .profile-details-content textarea::placeholder{
     color: #909090;
     font-size: 16px;
     font-weight: 400;
@@ -3120,7 +3143,7 @@ p:last-child{
 .profile-details-content label{
     color: var(--color__text);
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 500;
     font-family: var(--font1);
     margin-bottom: 3px;
 }
@@ -3143,4 +3166,78 @@ p:last-child{
     font-weight: bold;
     font-family: var(--font1);
     margin-left: 20px;
+}
+.qualification-details-1 ul .full-row-li, .passport-details ul .full-row-li{
+    width: 100%;
+}
+.qualification-details-1 ul .full-row-li input, .passport-details ul .full-row-li input, .qualification-details-1 ul .full-row-li select{
+    width: 49%;
+}
+#upload-file, #add-file, #upload-passport, #upload-visa{
+    display: none;
+}
+.upload-file-label i{
+    margin-right: 5px;
+}
+.profile-details-content .upload-file-label{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--theme__color1);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.profile-details-content ul .english-test-li{
+    width: 100%;
+}
+.qualification-details-2 .english-test-result{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.qualification-details-2 .english-test-result li{
+    width: 23.5%;
+}
+.qualification-details-2 .english-test-result li input{
+    width: 100%;
+}
+.add-education{
+    text-align: center;
+    padding: 35px 20px;
+    border: 1px dashed #DCDCDC;
+}
+.add-education label i{
+    padding: 12px;
+    background-color: #F2F7F1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: var(--theme__color1);
+    font-size: 24px;
+}
+.add-education p{
+    color: var(--theme__color1);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font1);
+}
+.profile-details-content .payment-last-li input{
+    margin-bottom: 0;
+}
+.profile-details-content .textarea-li{
+    width: 100%;
+}
+.delete-btn-li{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.delete-btn-li .delete-btn{
+    padding: 0;
+    color: #D82C0D;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font1);
+}
+.delete-btn-li .delete-btn i{
+    margin-right: 7px;
 }

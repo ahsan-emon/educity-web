@@ -755,12 +755,12 @@
                         <div class="col-12">
                             <div class="article-nav student-profile-nav">
 								<ul class="nav justify-content-center">
-									<li><a href="#" data-bs-toggle="tab" data-bs-target="#dashboard">Dashboard</a></li>
-									<li><a class="active" href="#" data-bs-toggle="tab" data-bs-target="#profile" class="">Profile</a></li>
-									<li><a href="#" data-bs-toggle="tab" data-bs-target="#applications" class="">Applications</a></li>
-									<li><a href="#" data-bs-toggle="tab" data-bs-target="#rewards" class="">Rewards</a></li>
-									<li><a href="#" data-bs-toggle="tab" data-bs-target="#reminders" class="">Reminders</a></li>
-									<li><a href="#" data-bs-toggle="tab" data-bs-target="#messages" class="">Messages <span class="msg-num">4</span></a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#dashboard"><i class="fas fa-th-large"></i>Dashboard</a></li>
+									<li><a class="active" href="#" data-bs-toggle="tab" data-bs-target="#profile" class=""><i class="fas fa-user-circle"></i>Profile<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#applications" class=""><i class="fas fa-graduation-cap"></i>Applications</a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#rewards" class=""><i class="fas fa-star"></i>Rewards</a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#reminders" class=""><i class="fas fa-calendar-day"></i>Reminders</a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#messages" class=""><i class="fas fa-envelope"></i>Messages <span class="msg-num">4</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -773,18 +773,18 @@
                                     <div class="col-3">
                                         <div class="article-nav student-profile-inner-nav">
                                             <ul class="nav">
-                                                <li><a class="active" href="#" data-bs-toggle="tab" data-bs-target="#personal-info" class="">Personal Info</a></li>
-                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#education">Education</a></li>
-                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#visa-details" class="">Visa Details</a></li>
-                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#documents" class="">Documents</a></li>
-                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#study-gaps" class="">Study Gaps</a></li>
-                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#payment-info" class="">Payment Info.</a></li>
+                                                <li><a class="active" href="#" data-bs-toggle="tab" data-bs-target="#personal-info" class=""><i class="fas fa-user"></i> Personal Info</a></li>
+                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#visa-info" class=""><i class="fas fa-globe"></i> Visa Details</a></li>
+                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#documents" class=""><i class="fas fa-folder"></i> Documents</a></li>
+                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#study-gaps" class=""><i class="fas fa-puzzle-piece"></i> Study Gaps</a></li>
+                                                <li><a href="#" data-bs-toggle="tab" data-bs-target="#payment-info" class=""><i class="fas fa-money-check-alt"></i> Payment Info.</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-9">
                                         <div class="tab-content profile-inner-content">
-                                            <div class="tab-pane active fade show" id="personal-info">
+                                            <div class="tab-pane fade" id="personal-info">
                                                 <form action="">
                                                     <div class="profile-personal-details profile-details">
 														<div class="profile-pic-content">
@@ -796,11 +796,11 @@
 															<ul>
 																<li>
 																	<label for="fname">First Name</label>
-																	<input type="text" name="" id="fname">
+																	<input class="first-name" type="text" name="" value="Sammantha" id="fname">
 																</li>
 																<li>
 																	<label for="lname">Last Name</label>
-																	<input type="text" name="" id="lname">
+																	<input class="last-name" type="text" name="" value="Shree" id="lname">
 																</li>
 																<li>
 																	<label for="phone">Phone</label>
@@ -937,25 +937,435 @@
 														</ul>
 													</div>
 													<div class="update-documents">
-														<input class="update-doc-btn btn" type="submit" value="Submit">
+														<input class="update-doc-btn btn" type="submit" value="Update">
 														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
 													</div>
                                                 </form>
                                             </div>
                                             <div class="tab-pane fade" id="education">
-                                                <h1>bye</h1>
+                                                <form action="">
+                                                    <div class="qualification-details-1 profile-details">
+														<div class="profile-details-content">
+															<ul>
+																<li class="full-row-li">
+																	<label for="qualification1">Qualification / Program Level</label>
+																	<select name="" id="qualification1">
+																		<option value="Bachelor's Degree">Bachelor's Degree</option>
+																		<option value="Honor's Degree">Honor's Degree</option>
+																		<option value="Master's Degree">Master's Degree</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="institution-name">Institution's Name</label>
+																	<input type="text" name="" value="Tribhuwan University" id="institution-name">
+																</li>
+																<li>
+																	<label for="program1">Program / Course</label>
+																	<input type="text" name="" value="Bachelor in Information Technology" id="program1">
+																</li>
+																<li>
+																	<label for="institution-country-1">Country</label>
+																	<select name="" id="institution-country-1">
+																		<option value="Nepal">Nepal</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="outcome">Outcome</label>
+																	<div class="outcome-field">
+																		<input class="radio-input" type="radio" id="pass" name="outcome" value="pass" checked>
+																		<label class="radio-label" id="pass-label" for="pass">Pass</label>
+																		<input class="radio-input" type="radio" id="failed" name="outcome" value="failed">
+																		<label class="radio-label" id="failed-label" for="failed">Failed</label> 
+																		<input class="radio-input" type="radio" id="ongoing" name="outcome" value="ongoing">
+																		<label class="radio-label" id="ongoing-label" for="ongoing">Ongoing</label>
+																	</div>
+																</li>
+																<li>
+																	<label for="start-date">Starting From</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="start-date">
+																</li>
+																<li>
+																	<label for="end-date">Ending In</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="end-date">
+																</li>
+																<li>
+																	<label for="">Upload</label>
+																	<label class="upload-file-label" for="upload-file"><i class="fas fa-file-upload"></i>Upload File</label>
+																	<input type="file" name="" id="upload-file">
+																</li>
+															</ul>
+														</div>
+													</div>
+                                                    <div class="qualification-details-1 qualification-details-2 profile-details">
+														<div class="profile-details-content">
+															<ul>
+																<li class="full-row-li">
+																	<label for="qualification2">Qualification / Program Level</label>
+																	<select name="" id="qualification2">
+																		<option value="English Proficiency">English Proficiency</option>
+																	</select>
+																</li>
+																<li class="full-row-li">
+																	<label for="test-type">Test Type</label>
+																	<select name="" id="test-type">
+																		<option value="PTE">PTE</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="test-date">Test Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="test-date">
+																</li>
+																<li>
+																	<label for="test-exp-date">Exp. Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="test-exp-date">
+																</li>
+																<li>
+																	<label for="program1">Overall Band</label>
+																	<input type="text" name="" value="80" id="program1">
+																</li>
+																<li>
+																	<label for="test-ref">Test Reference Number</label>
+																	<input type="text" value="895435" id="test-ref">
+																</li>
+																<li class="english-test-li">
+																	<ul class="english-test-result">
+																		<li>
+																			<label for="listening">Listening</label>
+																			<input type="text" name="" value="80" id="listening">
+																		</li>
+																		<li>
+																			<label for="speaking">Speaking</label>
+																			<input type="text" name="" value="80" id="speaking">
+																		</li>
+																		<li>
+																			<label for="writing">Writing</label>
+																			<input type="text" name="" value="80" id="writing">
+																		</li>
+																		<li>
+																			<label for="reading">Reading</label>
+																			<input type="text" name="" value="80" id="reading">
+																		</li>
+																	</ul>
+																</li>
+																<li>
+																	<label for="">Upload</label>
+																	<label class="upload-file-label" for="upload-file"><i class="fas fa-file-upload"></i>Upload File</label>
+																	<input type="file" name="" id="upload-file">
+																</li>
+															</ul>
+														</div>
+													</div>
+                                                    <div class="profile-details add-education">
+														<label for="add-file"><i class="fas fa-plus"></i></label>
+														<input type="file" name="" id="add-file">
+														<p>Add Education</p>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Update">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
+                                                </form>
                                             </div>
-                                            <div class="tab-pane fade" id="visa-details">
-                                                <h1>ok</h1>
+                                            <div class="tab-pane fade" id="visa-info">
+                                                <form action="">
+                                                    <div class="passport-details profile-details">
+														<div class="profile-details-content">
+															<h2>Passport Details</h2>
+															<ul>
+																<li>
+																	<label for="pass-num">Passport Number</label>
+																	<input type="text" name="" value="3254903456" id="pass-num">
+																</li>
+																<li>
+																	<label for="country-issue">Country of Issue</label>
+																	<select name="" id="country-issue">
+																		<option value="3254903456">3254903456</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="pass-issue-date">Issue Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="pass-issue-date">
+																</li>
+																<li>
+																	<label for="pass-exp-date">Expiry Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="pass-exp-date">
+																</li>
+																<li>
+																	<label for="nationality">Nationality</label>
+																	<select name="" id="nationality">
+																		<option value="Nepali">Nepali</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="national-id">Citizenship Number / National ID No.</label>
+																	<input type="text" value="3254903456" id="national-id">
+																</li>
+																<li class="full-row-li">
+																	<label for="current-loc">Current Location</label>
+																	<select name="" id="current-loc">
+																		<option value="Nepal">Nepal</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="">Upload Passport</label>
+																	<label class="upload-file-label" for="upload-passport"><i class="fas fa-file-upload"></i>Upload File</label>
+																	<input type="file" name="" id="upload-passport">
+																</li>
+															</ul>
+														</div>
+													</div>
+                                                    <div class="passport-details visa-details profile-details">
+														<div class="profile-details-content">
+															<h2>Visa Details</h2>
+															<ul>
+																<li>
+																	<label for="visa-type">Visa Type</label>
+																	<select name="" id="visa-type">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="Visit">Visit Visa</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="place-issue">Place of Issue</label>
+																	<select name="" id="place-issue">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="Nepal">Nepal</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="visa-issue-date">Visa Issue Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="visa-issue-date">
+																</li>
+																<li>
+																	<label for="visa-exp-date">Visa Expiry Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="visa-exp-date">
+																</li>
+																<li>
+																	<label for="health-ins">Overseas health Insurance Type</label>
+																	<select name="" id="health-ins">
+																		<option value="OSHC">OSHC</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="visa-exp-date2">Expiry Date</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="visa-exp-date2">
+																</li>
+																<li>
+																	<label for="provider-name">Provider Name</label>
+																	<input type="text" placeholder="Provider Name" id="provider-name">
+																</li>
+																<li>
+																	<label for="policy-num">Policy Number</label>
+																	<input type="text" placeholder="Policy Number" id="policy-num">
+																</li>
+																<li class="full-row-li">
+																	<label for="visa-num">Visa Number</label>
+																	<input type="text" value="" placeholder="Visa Number" id="visa-num">
+																</li>
+																<li>
+																	<label for="">Upload Passport</label>
+																	<label class="upload-file-label" for="upload-passport"><i class="fas fa-file-upload"></i>Upload File</label>
+																	<input type="file" name="" id="upload-passport">
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Update">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
+                                                </form>
                                             </div>
-                                            <div class="tab-pane fade" id="documents">
-                                                <h1>good</h1>
+                                            <div class="tab-pane active show fade" id="documents">
+                                                <form action="">
+                                                    <div class="document-mandatory-details profile-details">
+														<div class="profile-details-content">
+															<h2>Mandatory</h2>
+															<ul>
+																<li>
+																	<label for="gap-reason">Reason for Study Gap</label>
+																	<select name="" id="gap-reason">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="Sick">Sick</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="gap-duration">Duration for Study Gap</label>
+																	<select name="" id="gap-duration">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="3 month">3 Month</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="study-start-date">Starting From</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-start-date">
+																</li>
+																<li>
+																	<label for="study-end-date">Ending In</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-end-date">
+																</li>
+																<li class="textarea-li">
+																	<label for="gap-description">Study Gap Description</label>
+																	<textarea name="" id="gap-description" placeholder="Study Gap Description"></textarea>
+																</li>
+															</ul>
+														</div>
+													</div>
+                                                    <div class="document-optional-details profile-details">
+														<div class="profile-details-content">
+															<h2>Optional</h2>
+															<ul>
+																<li>
+																	<label for="gap-reason">Reason for Study Gap</label>
+																	<select name="" id="gap-reason">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="Sick">Sick</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="gap-duration">Duration for Study Gap</label>
+																	<select name="" id="gap-duration">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="3 month">3 Month</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="study-start-date">Starting From</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-start-date">
+																</li>
+																<li>
+																	<label for="study-end-date">Ending In</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-end-date">
+																</li>
+																<li class="textarea-li">
+																	<label for="gap-description">Study Gap Description</label>
+																	<textarea name="" id="gap-description" placeholder="Study Gap Description"></textarea>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Update">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
+                                                </form>
                                             </div>
                                             <div class="tab-pane fade" id="study-gaps">
-                                                
+                                                <form action="">
+                                                    <div class="passport-details profile-details">
+														<div class="profile-details-content">
+															<ul>
+																<li>
+																	<label for="gap-reason">Reason for Study Gap</label>
+																	<select name="" id="gap-reason">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="Sick">Sick</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="gap-duration">Duration for Study Gap</label>
+																	<select name="" id="gap-duration">
+																		<option value="" disabled selected hidden>Choose</option>
+																		<option value="3 month">3 Month</option>
+																	</select>
+																</li>
+																<li>
+																	<label for="study-start-date">Starting From</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-start-date">
+																</li>
+																<li>
+																	<label for="study-end-date">Ending In</label>
+																	<input type="text" placeholder="DD/MM/YY"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="study-end-date">
+																</li>
+																<li class="textarea-li">
+																	<label for="gap-description">Study Gap Description</label>
+																	<textarea name="" id="gap-description" placeholder="Study Gap Description"></textarea>
+																</li>
+																<li>
+																	<label for="work-experience">Do you have relevant work experience?</label>
+																	<div class="gender-field work-experience-field">
+																		<input class="radio-input" type="radio" id="yes" name="work-experience" value="yes" checked>
+																		<label class="radio-label" id="yes-label" for="yes">Yes</label>
+																		<input class="radio-input" type="radio" id="no" name="work-experience" value="no">
+																		<label class="radio-label" id="no-label" for="no">No</label> 
+																	</div>
+																</li>
+																<li class="delete-btn-li">
+																	<button class="btn delete-btn"><i class="fas fa-trash"></i>Delete</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="profile-details add-education">
+														<label for="add-file"><i class="fas fa-plus"></i></label>
+														<input type="file" name="" id="add-file">
+														<p>Add Study Gaps</p>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Update">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
+                                                </form>
                                             </div>
                                             <div class="tab-pane fade" id="payment-info">
-                                
+												<form action="">
+                                                    <div class="payment-details profile-details">
+														<div class="profile-details-content">
+															<ul>
+																<li>
+																	<label for="bank-name">Name of the Bank</label>
+																	<input type="text" name="" placeholder="Name of the Bank" id="bank-name">
+																</li>
+																<li>
+																	<label for="acc-holder">Account Holder</label>
+																	<input type="text" name="" placeholder="Account Holder" id="acc-holder">
+																</li>
+																<li class="payment-last-li">
+																	<label for="bsb-num">BSB Number</label>
+																	<input type="text" name="" placeholder="BSB Number" id="bsb-num">
+																</li>
+																<li class="payment-last-li">
+																	<label for="acc-num">Account Number</label>
+																	<input type="text" name="" placeholder="Account Number" id="acc-num">
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Update">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
