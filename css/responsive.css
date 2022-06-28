@@ -1263,13 +1263,34 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .sign-in-box{
         border: 0;
         padding: 0;
     }
     .sign-in-section{
         margin: 50px 0;
+    }
+    .profile-details-content ul li{
+        width: 100%;
+    }
+    .user-profile-icon {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .student-profile-nav ul li a {
+        font-size: 13px;
+        padding: 3px 5px;
+    }
+    .student-profile-nav ul li a::after {
+        height: 2px;
+    }
+    .student-profile-nav{
+        margin: 20px 0;
+    }
+    .student-profile-inner-nav ul li a {
+        font-size: 14px;
     }
 }
 

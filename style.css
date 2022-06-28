@@ -3032,6 +3032,7 @@ p:last-child{
     border-radius: 8px;
     padding: 28px 20px;
     border: 1px solid #DCDCDC;
+    margin-bottom: 25px;
 }
 #file{
     display: none;
@@ -3083,6 +3084,16 @@ p:last-child{
     border: 0;
     transition: .3s all ease-in-out;
 }
+.profile-details-content{
+    margin-bottom: 30px;
+}
+.profile-details-content h2{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--font1);
+    color: var(--color__text);
+    margin-bottom: 20px;
+}
 .profile-details-content ul{
     margin: 0;
     padding: 0;
@@ -3093,30 +3104,43 @@ p:last-child{
 .profile-details-content ul li{
     width: 49%;
 }
-.profile-details-content ul li input{
+.profile-details-content input{
     width: 100%;
     border: 1px solid #DCDCDC;
     border-radius: 4px;
     padding: 9px;
     margin-bottom: 15px;
 }
-.profile-details-content ul li input::placeholder{
+.profile-details-content input::placeholder{
     color: #909090;
     font-size: 16px;
     font-weight: 400;
     font-family: var(--font1);
 }
-/* .profile-details-content ul li label{
-    color: var(--color__text);
-    font-size: 14px;
-    font-weight: 500px;
-    font-family: var(--font1);
-    margin-bottom: 5px;
-} */
 .profile-details-content label{
     color: var(--color__text);
     font-size: 14px;
     font-weight: 500px;
     font-family: var(--font1);
     margin-bottom: 3px;
+}
+.update-documents{
+    /* display: ; */
+    margin-bottom: 40px;
+}
+.update-documents .update-doc-btn{
+    padding: 12px 28px;
+    background-color: #4DA42F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--font1);
+    border-radius: 24px;
+}
+.update-documents .cancel-doc-btn{
+    color: #4DA42F;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--font1);
+    margin-left: 20px;
 }

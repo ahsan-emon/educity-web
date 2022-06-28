@@ -786,50 +786,160 @@
                                         <div class="tab-content profile-inner-content">
                                             <div class="tab-pane active fade show" id="personal-info">
                                                 <form action="">
-                                                    <div class="profile-details">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="profile-pic-content">
-                                                                    <img class="img-fluid" id="profile-pic" src="images/about-user.png" alt="">
-                                                                    <input type="file" id="file">
-                                                                    <label for="file" id="uploadBtn">Upload Now</label>
-                                                                </div>
-                                                                <div class="profile-details-content">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <label for="fname">First Name</label>
-                                                                            <input type="text" name="" id="fname">
-                                                                        </li>
-                                                                        <li>
-                                                                            <label for="lname">Last Name</label>
-                                                                            <input type="text" name="" id="lname">
-                                                                        </li>
-                                                                        <li>
-                                                                            <label for="phone">Phone</label>
-                                                                            <input type="text" name="" placeholder="Phone" id="phone">
-                                                                        </li>
-                                                                        <li>
-                                                                            <label for="dob">Date of Birth</label>
-                                                                            <input type="text" placeholder="Choose"
-                                                                            onfocus="(this.type='date')"
-                                                                            onblur="(this.type='text')" id="dob">
-                                                                        </li>
-                                                                    </ul>
-                                                                    <label for="gender">Gender</label>
-                                                                    <div class="gender-field">
-                                                                        
-                                                                        <input class="radio-input" type="radio" id="male" name="gender" value="male" checked>
-                                                                        <label class="radio-label" id="male-label" for="male">Male</label>
-                                                                        <input class="radio-input" type="radio" id="female" name="gender" value="female">
-                                                                        <label class="radio-label" id="female-label" for="female">Female</label> 
-                                                                        <input class="radio-input" type="radio" id="other" name="gender" value="other">
-                                                                        <label class="radio-label" id="other-label" for="other">Other</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12"></div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="profile-personal-details profile-details">
+														<div class="profile-pic-content">
+															<img class="img-fluid" id="profile-pic" src="images/about-user.png" alt="">
+															<input type="file" id="file">
+															<label for="file" id="uploadBtn">Upload Now</label>
+														</div>
+														<div class="profile-details-content">
+															<ul>
+																<li>
+																	<label for="fname">First Name</label>
+																	<input type="text" name="" id="fname">
+																</li>
+																<li>
+																	<label for="lname">Last Name</label>
+																	<input type="text" name="" id="lname">
+																</li>
+																<li>
+																	<label for="phone">Phone</label>
+																	<input type="text" name="" placeholder="Phone" id="phone">
+																</li>
+																<li>
+																	<label for="dob">Date of Birth</label>
+																	<input type="text" placeholder="Choose"
+																	onfocus="(this.type='date')"
+																	onblur="(this.type='text')" id="dob">
+																</li>
+															</ul>
+															<label for="gender">Gender</label>
+															<div class="gender-field">
+																
+																<input class="radio-input" type="radio" id="male" name="gender" value="male" checked>
+																<label class="radio-label" id="male-label" for="male">Male</label>
+																<input class="radio-input" type="radio" id="female" name="gender" value="female">
+																<label class="radio-label" id="female-label" for="female">Female</label> 
+																<input class="radio-input" type="radio" id="other" name="gender" value="other">
+																<label class="radio-label" id="other-label" for="other">Other</label>
+															</div>
+														</div>
+													</div>
+													<div class="profile-contact-details profile-details profile-details-content">
+														<h2>Contact Details</h2>
+														<ul>
+															<li>
+																<label for="address">Address</label>
+																<input type="text" name="" id="address">
+															</li>
+															<li>
+																<label for="suburb">Suburb</label>
+																<input type="text" name="" id="suburb">
+															</li>
+															<li>
+																<label for="city">City / State</label>
+																<input type="text" name="" id="city">
+															</li>
+															<li>
+																<label for="country">Country</label>
+																<input type="text" id="country">
+															</li>
+															<li>
+																<label for="post-code">Post Code</label>
+																<input type="text" id="post-code">
+															</li>
+															<li>
+																<label for="home-no">Home No.</label>
+																<input type="text" id="home-no">
+															</li>
+														</ul>
+													</div>
+													<div class="profile-emergency-local-details profile-details profile-details-content">
+														<h2>Emergency Contact - Local</h2>
+														<ul>
+															<li>
+																<label for="local-name">Name</label>
+																<input type="text" name="" id="local-name">
+															</li>
+															<li>
+																<label for="local-relationship">Relationship</label>
+																<input type="text" name="" id="local-relationship">
+															</li>
+															<li>
+																<label for="local-address">Address</label>
+																<input type="text" name="" id="local-address">
+															</li>
+															<li>
+																<label for="local-suburb">Suburb</label>
+																<input type="text" name="" id="local-suburb">
+															</li>
+															<li>
+																<label for="local-city">City / State</label>
+																<input type="text" name="" id="local-city">
+															</li>
+															<li>
+																<label for="local-country">Country</label>
+																<input type="text" id="local-country">
+															</li>
+															<li>
+																<label for="local-post-code">Post Code</label>
+																<input type="text" id="local-post-code">
+															</li>
+															<li>
+																<label for="local-home-no">Home No.</label>
+																<input type="text" id="local-home-no">
+															</li>
+															<li>
+																<label for="local-phone">Phone</label>
+																<input type="text" id="local-phone">
+															</li>
+														</ul>
+													</div>
+													<div class="profile-emergency-local-details profile-details profile-details-content">
+														<h2>Emergency Contact - International</h2>
+														<ul>
+															<li>
+																<label for="int-name">Name</label>
+																<input type="text" name="" id="int-name">
+															</li>
+															<li>
+																<label for="int-relationship">Relationship</label>
+																<input type="text" name="" id="int-relationship">
+															</li>
+															<li>
+																<label for="int-address">Address</label>
+																<input type="text" name="" id="int-address">
+															</li>
+															<li>
+																<label for="int-suburb">Suburb</label>
+																<input type="text" name="" id="int-suburb">
+															</li>
+															<li>
+																<label for="int-city">City / State</label>
+																<input type="text" name="" id="int-city">
+															</li>
+															<li>
+																<label for="int-country">Country</label>
+																<input type="text" id="int-country">
+															</li>
+															<li>
+																<label for="int-post-code">Post Code</label>
+																<input type="text" id="int-post-code">
+															</li>
+															<li>
+																<label for="int-home-no">Home No.</label>
+																<input type="text" id="int-home-no">
+															</li>
+															<li>
+																<label for="int-phone">Phone</label>
+																<input type="text" id="int-phone">
+															</li>
+														</ul>
+													</div>
+													<div class="update-documents">
+														<input class="update-doc-btn btn" type="submit" value="Submit">
+														<input class="cancel-doc-btn btn" type="submit" value="Cancel">
+													</div>
                                                 </form>
                                             </div>
                                             <div class="tab-pane fade" id="education">
