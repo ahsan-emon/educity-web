@@ -1201,71 +1201,169 @@
 															<h2>Mandatory</h2>
 															<ul>
 																<li>
-																	<label for="gap-reason">Reason for Study Gap</label>
-																	<select name="" id="gap-reason">
-																		<option value="" disabled selected hidden>Choose</option>
-																		<option value="Sick">Sick</option>
-																	</select>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Passport</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-pass-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-pass-file">
+																		</div>
+																	</div>
 																</li>
 																<li>
-																	<label for="gap-duration">Duration for Study Gap</label>
-																	<select name="" id="gap-duration">
-																		<option value="" disabled selected hidden>Choose</option>
-																		<option value="3 month">3 Month</option>
-																	</select>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">English Test Result</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-end-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-end-file">
+																		</div>
+																	</div>
 																</li>
 																<li>
-																	<label for="study-start-date">Starting From</label>
-																	<input type="text" placeholder="DD/MM/YY"
-																	onfocus="(this.type='date')"
-																	onblur="(this.type='text')" id="study-start-date">
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Highest Education Certificates</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-highest-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-highest-file">
+																		</div>
+																	</div>
 																</li>
 																<li>
-																	<label for="study-end-date">Ending In</label>
-																	<input type="text" placeholder="DD/MM/YY"
-																	onfocus="(this.type='date')"
-																	onblur="(this.type='text')" id="study-end-date">
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Secondary Education Certificates</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-secondary-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-secondary-file">
+																		</div>
+																	</div>
 																</li>
-																<li class="textarea-li">
-																	<label for="gap-description">Study Gap Description</label>
-																	<textarea name="" id="gap-description" placeholder="Study Gap Description"></textarea>
+																<li>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Visa Copy</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-visa-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-visa-file">
+																		</div>
+																	</div>
 																</li>
 															</ul>
 														</div>
 													</div>
-                                                    <div class="document-optional-details profile-details">
+                                                    <div class="document-mandatory-details document-optional-details profile-details">
 														<div class="profile-details-content">
 															<h2>Optional</h2>
 															<ul>
 																<li>
-																	<label for="gap-reason">Reason for Study Gap</label>
-																	<select name="" id="gap-reason">
-																		<option value="" disabled selected hidden>Choose</option>
-																		<option value="Sick">Sick</option>
-																	</select>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">National ID Card</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-nid-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-nid-file">
+																		</div>
+																	</div>
 																</li>
 																<li>
-																	<label for="gap-duration">Duration for Study Gap</label>
-																	<select name="" id="gap-duration">
-																		<option value="" disabled selected hidden>Choose</option>
-																		<option value="3 month">3 Month</option>
-																	</select>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Health Insurance Copy</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-hic-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-hic-file">
+																		</div>
+																	</div>
+																	<label for="exp-on-date">Expire on</label>
+																	<input class="expire-on-input" type="text" value="03/18/2022" placeholder="DD/MM/YY" onfocus="(this.type='date')" onblur="(this.type='text')" id="exp-on-date">
 																</li>
 																<li>
-																	<label for="study-start-date">Starting From</label>
-																	<input type="text" placeholder="DD/MM/YY"
-																	onfocus="(this.type='date')"
-																	onblur="(this.type='text')" id="study-start-date">
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Relationship Certificate</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-rlt-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-rlt-file">
+																		</div>
+																	</div>
 																</li>
 																<li>
-																	<label for="study-end-date">Ending In</label>
-																	<input type="text" placeholder="DD/MM/YY"
-																	onfocus="(this.type='date')"
-																	onblur="(this.type='text')" id="study-end-date">
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Resume</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-cv-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-cv-file">
+																		</div>
+																	</div>
 																</li>
-																<li class="textarea-li">
-																	<label for="gap-description">Study Gap Description</label>
-																	<textarea name="" id="gap-description" placeholder="Study Gap Description"></textarea>
+																<li>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Sources of Income</label>
+																			<span><small class="m-0">Bank Statement / Balance Certificate, Loan Papers</small></span>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-bank-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-bank-file">
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Financials</label>
+																			<span><small class="m-0">Payslips, Business Docs, Govt Certified Sources</small></span>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-finance-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-finance-file">
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">SOP</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-sop-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-sop-file">
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">No objection certificate (NOC)</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-noc-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-noc-file">
+																		</div>
+																	</div>
+																</li>
+																<li class="m-0">
+																	<div class="row">
+																		<div class="col-5">
+																			<label for="">Bank Certificate / Balance Certificate</label>
+																		</div>
+																		<div class="col-7 upload-side">
+																			<label class="upload-pass-label" for="upload-bal-file"><i class="fas fa-file-upload"></i>Upload File</label><span><small>or drag and drop JPG, PNG, PDF (max, 4 MB)</small></span>
+																			<input type="file" name="" id="upload-bal-file">
+																		</div>
+																	</div>
 																</li>
 															</ul>
 														</div>

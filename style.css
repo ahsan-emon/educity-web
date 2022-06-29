@@ -3241,3 +3241,44 @@ p:last-child{
 .delete-btn-li .delete-btn i{
     margin-right: 7px;
 }
+.document-mandatory-details .profile-details-content li{
+    width: 100%;
+    border: 1px dashed #DCDCDC;
+    border-radius: 4px;
+    padding: 9px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+}
+.document-mandatory-details .profile-details-content li label{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.document-mandatory-details .profile-details-content li span small{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--font1);
+    color: #757575;
+    margin-left: 5px;
+}
+.upload-pass-label i{
+    margin-right: 5px;
+}
+.profile-details-content .upload-pass-label{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--theme__color1);
+    cursor: pointer;
+    margin: 0;
+}
+.profile-details-content .upload-side{
+    display: flex;
+    align-items: center;
+}
+.profile-details-content .upload-side input{
+    display: none;
+}
+.profile-details-content .expire-on-input{
+    width: 50%;
+}
